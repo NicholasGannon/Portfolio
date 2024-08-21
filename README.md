@@ -7,5 +7,5 @@ https://nicholasgannon.io/</br>
 
 ## Technologies Used
 - HTML 5
-- Tailwind CSS
+- [Tailwind CSS](https://tailwindcss.com/)
 - JavaScript
