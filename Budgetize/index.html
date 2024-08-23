@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="UX designer and frontend developer who focuses on crafting exceptional digital experiences that uplift and resonate with users.">
+    <meta name="description" content="Web application that assists users to better understand their spending habits">
     <link rel="icon" type="image/x-icon" href="/Assets/Favicon.ico">
     <link rel="stylesheet" href="/output.css">
     <!-- JS File Script -->
     <script src="/script.js" defer></script>
-    <title>Nicholas Gannon | Home</title>
+    <title>Projects | Budgetize</title>
 </head>
 <body class="bg-black font-clashGrotesk">
     <!-- Hamburger Mobile Menu -->
     <div class="bg-primary fixed w-full h-full hidden animate-open-menu" id="mobile-menu">
         <div class="flex flex-col gap-4 p-6 absolute bottom-4">
-            <a href="#home-section" class="relative group text-black text-4xl font-semibold uppercase">
+            <a href="/index.html#home-section" class="relative group text-black text-4xl font-semibold uppercase">
                 <span class="uppercase">home</span>
                 <span class="absolute -bottom-1 left-0 w-0 h-1 rounded-full bg-black transition-all duration-300 group-hover:w-12"></span>
             </a>
-            <a href="#projects-section" class="relative group text-black text-4xl font-semibold uppercase">
+            <a href="/index.html#projects-section" class="relative group text-black text-4xl font-semibold uppercase">
                 <span class="uppercase">projects</span>
                 <span class="absolute -bottom-1 left-0 w-0 h-1 rounded-full bg-black transition-all duration-300 group-hover:w-12"></span>
             </a>
@@ -64,79 +64,23 @@
     <!-- Main Container -->
     <div class="mx-auto max-w-desktop">
         <!-- Hero + Nav Section -->
-        <section class="px-6 pb-28 pt-16 sm:pb-40 sm:pt-16" id="home-section">
+        <section class="px-6 pb-28 pt-16 sm:pb-32 sm:pt-16" id="home-section">
             <div class="flex flex-col gap-8 mt-24">
-                <h1 class="text-primary" style="font-size: clamp(2.5rem, 5vw, 6.25rem); line-height: 1;">Hello, I'm Nicholas Gannon</h1>
-                <p class="max-w-7xl text-gray-300 font-light" style="font-size: clamp(1.1rem, 2.5vw, 2.1rem);">I'm a passionate UX Designer and Frontend Developer who focuses on crafting <span class="border-b">exceptional</span> digital experiences that uplift and resonate with users. I've completed two internships thus far, primarily focusing on design and development. Browse some of my recent work below.</p>
+                <h1 class="text-primary" style="font-size: clamp(2.5rem, 5vw, 6.25rem); line-height: 1;">Budgetize</h1>
+                <p class="max-w-7xl text-gray-300 font-light" style="font-size: clamp(1.1rem, 2.5vw, 2.1rem);">This dynamic web application is focused on helping users gain a better understanding of their monthly spending and income.</p>
+                <p class="max-w-7xl text-gray-300 font-light" style="font-size: clamp(1.1rem, 2.5vw, 2.1rem);">Through visual aid, the users can gain insights regarding their financial habits and make improvements.</p>
+                <p class="max-w-7xl text-gray-300 font-light" style="font-size: clamp(1.1rem, 2.5vw, 2.1rem);"><span class="text-primary underline">Achieved:</span> User interface design, wireframes, low-fidelity mockups, high-fidelity mockups, and frontend implementation (React JS, Tailwind CSS, and ChartJS).</p>
             </div>
         </section>
 
         <!-- Projects Section -->
-        <section class="pb-36 px-6" id="projects-section">
-            <div class="flex flex-col md:grid grid-cols-2 grid-rows-3 gap-12">
-                <div class="flex flex-col gap-4">
-                    <a class="group" href="/quicshop/">
-                        <div class="overflow-hidden transition-all duration-300 rounded-xl">
-                            <img class="w-full group-hover:scale-110 ease-in-out transition-all duration-500" src="/Assets/QuicShop-Mobile.webp" alt="QuicShop thumbnail">
-                        </div>
-                    </a>
-                    <div class="flex flex-col">
-                        <div class="flex justify-between items-center">
-                            <p class="text-gray-400">Design • Development</p>
-                            <a href="https://quicshop.io/" class="text-primary">Live &nbsp;<i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
-                        </div>
-                        <p class="text-white text-2xl md:text-3xl font-medium">QuicShop</p>
-                    </div>
+        <section class="pb-24 px-6" id="projects-section">
+            <div class="flex flex-col md:grid grid-cols-2 grid-rows-1 gap-8">
+                <div>
+                    <img src="/Assets/Budgetize-Mockup-2.webp" class="h-full w-full object-cover" alt="Mockup">
                 </div>
-                <div class="flex flex-col gap-4">
-                    <a class="group" href="/valley/">
-                        <div class="overflow-hidden transition-all duration-300 rounded-xl">
-                            <img class="w-full group-hover:scale-110 ease-in-out transition-all duration-500" src="/Assets/Valley-Mobile-Banking.webp" alt="Valley Mobile Banking thumbnail">
-                        </div>
-                    </a>
-                    <div class="flex flex-col">
-                        <p class="text-gray-400">Design</p>
-                    <p class="text-white text-2xl md:text-3xl font-medium">Valley Mobile Banking</p>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-4">
-                    <a class="group" href="/budgetize/">
-                        <div class="overflow-hidden transition-all duration-300 rounded-xl">
-                            <img class="w-full group-hover:scale-110 ease-in-out transition-all duration-500" src="/Assets/Budgetize-Mockup-1.webp" alt="UFC Picker thumbnail">
-                        </div>
-                    </a>
-                    <div class="flex flex-col">
-                        <div class="flex justify-between items-center">
-                            <p class="text-gray-400">Design • Development</p>
-                            <a href="https://use-budgetize.vercel.app/" class="text-primary">Live &nbsp;<i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
-                        </div>
-                    <p class="text-white text-2xl md:text-3xl font-medium">Budgetize</p>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-4">
-                    <a class="group" href="/mma-corner/">
-                        <div class="overflow-hidden transition-all duration-300 rounded-xl">
-                            <img class="w-full group-hover:scale-110 ease-in-out transition-all duration-500" src="/Assets/MMACorner-Mockup-1.webp" alt="UFC Picker thumbnail">
-                        </div>
-                    </a>
-                    <div class="flex flex-col">
-                        <div class="flex justify-between items-center">
-                            <p class="text-gray-400">Design • Development</p>
-                            <a href="https://themmacorner.onrender.com/" class="text-primary">Live &nbsp;<i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
-                        </div>
-                    <p class="text-white text-2xl md:text-3xl font-medium">The MMA Corner</p>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-4">
-                    <a class="group" href="/african-student-association/">
-                        <div class="overflow-hidden transition-all duration-300 rounded-xl">
-                            <img class="w-full group-hover:scale-110 ease-in-out transition-all duration-500" src="/Assets/African-Student-Association.webp" alt="African Student Association Thumbnail">
-                        </div>
-                    </a>
-                    <div class="flex flex-col">
-                        <p class="text-gray-400">Design</p>
-                    <p class="text-white text-2xl md:text-3xl font-medium">African Student Association</p>
-                    </div>
+                <div>
+                    <img src="/Assets/Budgetize-Mockup-3.webp" class="h-full w-full object-cover" alt="Mockup">
                 </div>
             </div>
         </section>
@@ -180,5 +124,6 @@
     <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@200,700,400,600,300,1,500&display=swap" rel="stylesheet">
     <!-- FontAwesome Embed -->
     <script src="https://kit.fontawesome.com/d4fd18ea18.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
