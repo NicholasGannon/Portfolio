@@ -9,14 +9,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <!-- JS File Script -->
+    <script src="/script.js" defer></script>
 </head>
 <body class="font-Bricolage">
-    <section class="h-svh bg-primary">
+    <section class="hidden fixed w-full h-full bg-secondary" id="mobile-menu">
+        <div class="absolute flex flex-col gap-4 text-white font-black uppercase">
+            <a href="#" style="font-size: clamp(2rem, 5vw + 1rem, 6rem);">about me</a>
+            <a href="#" style="font-size: clamp(2rem, 5vw + 1rem, 6rem);">selected works</a>
+            <a href="#" style="font-size: clamp(2rem, 5vw + 1rem, 6rem);">get in contact</a>
+        </div>
+    </section>
+    <!-- Hero + Header -->
+    <section class="bg-primary">
         <header class="flex justify-between items-center gap-4 py-6">
-            <span class="block border border-t-1 border-secondary w-1/4"></span>
+            <span class="block border border-t-1 border-accent w-1/4"></span>
             <img src="/assets/Logo.svg" alt="Logo">
-            <span class="block border border-t-1 border-secondary w-full"></span>
-            <div class="flex gap-2">
+            <span class="hidden md:block border border-t-1 border-accent w-full"></span>
+            <div class="hidden md:flex gap-2">
                 <a href="#" target="_blank" class="flex justify-center items-center w-8 h-8 border border-black rounded-full duration-300 hover:text-primary hover:bg-black">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
@@ -33,17 +43,18 @@
                     <i class="fa-solid fa-envelope"></i>
                 </a>
             </div>
-            <span class="block border border-t-1 border-secondary w-full"></span>
-            <a href="#" class="font-light">Menu</a>
-            <span class="block border border-t-1 border-secondary w-1/4"></span>
+            <span class="block border border-t-1 border-accent w-full"></span>
+            <a href="#" class="font-light" id="menu-btn">Menu</a>
+            <span class="block border border-t-1 border-accent w-1/4"></span>
         </header>
 
         <main>
             <h2 class="font-black leading-none uppercase" style="font-size: clamp(3rem, 9vw + 1rem, 15rem);">nicholas gannon</h2>
-            <p class="font-light">I'm a passionate UX Designer and Frontend Developer who focuses on crafting exceptional digital experiences that uplift and resonate with users. I strive to create designs that are not only visually appealing, but also highly functional and user-friendly. Learn more about me and view some of my selected works below.</p>
+            <p class="font-light">I'm a passionate <span class="font-bold">UX Designer</span> and <span class="font-bold">Frontend Developer</span> who focuses on crafting exceptional digital experiences that uplift and resonate with users. I strive to create designs that are not only visually appealing, but also highly functional and <span class="font-bold">user-friendly.</span> Learn more about me and view some of my selected works below.</p>
         </main>
     </section>
 
+    <!-- About -->
     <section class="bg-black text-primary flex flex-col sm:grid sm:grid-cols-2 rounded-tl-3xl rounded-tr-3xl">
         <h3 class="font-black leading-none" style="font-size: clamp(2rem, 7vw + 1rem, 12rem);">ABOUT ME</h3>
         <div>
@@ -61,29 +72,33 @@
         </div>
     </section>
 
+    <!-- Work -->
     <section class="bg-primary">
         <h3 class="font-black leading-none" style="font-size: clamp(2rem, 7vw + 1rem, 12rem);">SELECTED WORKS</h3>
     </section>
 
+    <!-- Footer -->
     <footer class="bg-black text-primary rounded-tl-3xl rounded-tr-3xl">
-        <h4 class="font-black leading-none" style="font-size: clamp(2rem, 5vw + 1rem, 7rem);">GET IN CONTACT</h4>
-        <p>Feel free to send me an email or connect with me on LinkedIn. I also encourage you to check out my other digital spaces. I will respond as soon as possible!</p>
-        <div class="flex gap-2">
-            <a href="#" target="_blank" class="flex justify-center items-center w-8 h-8 border border-primary rounded-full duration-300">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="#" target="_blank" class="flex justify-center items-center w-8 h-8 border border-primary rounded-full duration-300">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="#" target="_blank" class="flex justify-center items-center w-8 h-8 border border-primary rounded-full duration-300">
-                <i class="fa-brands fa-square-dribbble"></i>
-            </a>
-            <a href="#" target="_blank" class="flex justify-center items-center w-8 h-8 border border-primary rounded-full duration-300">
-                <i class="fa-brands fa-behance"></i>
-            </a>
-            <a href="#" target="_blank" class="flex justify-center items-center w-8 h-8 border border-primary rounded-full duration-300">
-                <i class="fa-solid fa-envelope"></i>
-            </a>
+        <div class="flex flex-col gap-6">
+            <h4 class="font-black leading-none" style="font-size: clamp(2rem, 5vw + 1rem, 6rem);">GET IN CONTACT</h4>
+            <p class="max-w-4xl font-extralight text-xl">Feel free to send me an email or connect with me on LinkedIn. I also encourage you to check out my other digital spaces. I will respond as soon as possible!</p>
+            <div class="flex gap-2">
+                <a href="#" target="_blank" class="flex justify-center items-center w-8 h-8 border border-primary rounded-full duration-300 hover:text-black hover:bg-primary">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#" target="_blank" class="flex justify-center items-center w-8 h-8 border border-primary rounded-full duration-300 hover:text-black hover:bg-primary">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" target="_blank" class="flex justify-center items-center w-8 h-8 border border-primary rounded-full duration-300 hover:text-black hover:bg-primary">
+                    <i class="fa-brands fa-square-dribbble"></i>
+                </a>
+                <a href="#" target="_blank" class="flex justify-center items-center w-8 h-8 border border-primary rounded-full duration-300 hover:text-black hover:bg-primary">
+                    <i class="fa-brands fa-behance"></i>
+                </a>
+                <a href="#" target="_blank" class="flex justify-center items-center w-8 h-8 border border-primary rounded-full duration-300 hover:text-black hover:bg-primary">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
         </div>
     </footer>
 
