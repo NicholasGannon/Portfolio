@@ -16,6 +16,7 @@ module.exports = {
       animation: {
         blob: "blob 7s infinite",
         'open-menu': 'open-menu 0.5s ease-in-out forwards',
+        'close-menu': 'close-menu 0.5s ease-in-out forwards',
       },
       keyframes: {
         blob: {
@@ -38,6 +39,14 @@ module.exports = {
           },
           '100%': {
             transform: 'scaleY(1)',
+          }
+        },
+        'close-menu': {
+          '0%': {
+            transform: 'scaleY(1)',
+          },
+          '100%': {
+            transform: 'scaleY(0)',
           }
         },
       },
