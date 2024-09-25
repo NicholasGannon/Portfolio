@@ -1,6 +1,7 @@
 const initApp = () => {
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
+    const closeBtn = document.getElementById('close-btn');
 
     let isMenuOpen = false;
 
@@ -25,7 +26,7 @@ const initApp = () => {
     }
 
     menuBtn.addEventListener('click', toggleMenu);
-    mobileMenu.addEventListener('click', toggleMenu);
+    closeBtn.addEventListener('click', toggleMenu);
 }
 
 document.addEventListener('DOMContentLoaded', initApp);
