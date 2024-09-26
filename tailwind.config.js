@@ -9,7 +9,8 @@ module.exports = {
       colors: {
         "primary": "#FFF8EE",
         "accent": "#DACDBB",
-        "secondary": "#2590F3", 
+        "secondary": "#2590F3",
+        "tertiary": "#675944",
       },
       animation: {
         'open-menu': 'open-menu 0.8s ease-in-out forwards',
@@ -18,21 +19,18 @@ module.exports = {
       keyframes: {
         'open-menu': {
           '0%': {
-            transform: 'scaleY(0)',
-          },
-          '80%': {
-            transform: 'scaleY(1)',
+            transform: 'translateX(-100%)',
           },
           '100%': {
-            transform: 'scaleY(1)',
+            transform: 'translateX(0%)',
           }
         },
         'close-menu': {
           '0%': {
-            transform: 'scaleX(1)',
+            transform: 'translateX(0%)',
           },
           '100%': {
-            transform: 'scaleX(0)',
+            transform: 'translateX(100%)',
           }
         },
       },
