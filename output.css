@@ -908,18 +908,6 @@ video {
   max-width: 700px;
 }
 
-.max-w-sm {
-  max-width: 24rem;
-}
-
-.max-w-xl {
-  max-width: 36rem;
-}
-
-.max-w-\[20px\] {
-  max-width: 20px;
-}
-
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -1484,6 +1472,14 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-16 {
+  gap: 4rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2876,6 +2872,10 @@ video {
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:gap-4 {
+    gap: 1rem;
   }
 }
 
