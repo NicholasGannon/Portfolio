@@ -2,6 +2,8 @@ const initApp = () => {
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     const closeBtn = document.getElementById('close-btn');
+    const navigationLinks = document.getElementsByClassName('navigation-links');
+    console.log(navigationLinks);
 
     let isMenuOpen = false;
 
@@ -27,6 +29,9 @@ const initApp = () => {
 
     menuBtn.addEventListener('click', toggleMenu);
     closeBtn.addEventListener('click', toggleMenu);
+    navigationLinks[0].addEventListener('click', toggleMenu);
+    navigationLinks[1].addEventListener('click', toggleMenu);
+    navigationLinks[2].addEventListener('click', toggleMenu);
 }
 
 document.addEventListener('DOMContentLoaded', initApp);
