@@ -13,8 +13,8 @@
     <!-- JS File Script -->
     <script src="/script.js" defer></script>
 </head>
-<body class="font-Bricolage bg-primary">
-    <section class="hidden fixed w-full h-full bg-secondary animate-open-menu" id="mobile-menu">
+<body class="font-Bricolage bg-primary" id="body">
+    <section class="hidden fixed w-full h-full bg-secondary animate-open-menu z-10" id="mobile-menu">
         <button class="absolute top-8 right-12 text-white text-xl px-4 py-2 outline outline-1 outline-white hover:bg-white hover:text-secondary duration:300 transition-all" id="close-btn">Close</button>
         <div class="h-full flex flex-col justify-center pl-8 gap-4 text-white font-black uppercase">
             <span class="flex items-center gap-4">
@@ -56,7 +56,7 @@
                     </a>
                 </div>
                 <span class="block border border-t-1 border-accent w-full"></span>
-                <a href="#" class="font-light text-[#3E372E]" id="menu-btn">Menu</a>
+                <a href="#" class="font-light text-[#3E372E] hover:rotate-[360deg] duration-300 z-0" id="menu-btn">Menu</a>
             </header>
 
             <div class="max-w-[1440px] mx-auto">
@@ -78,7 +78,7 @@
             <div class="flex flex-col gap-12">
                 <div class="flex flex-col gap-3">
                     <div class="flex items-center gap-3 md:gap-4">
-                        <img src="/assets/WorkExperience.svg" alt="Shape icon" style="max-width: clamp(25px, 3vw + 5px, 100%);">
+                        <img src="/assets/WorkExperience.svg" alt="Shape icon" class="hover:rotate-90 duration-300" style="max-width: clamp(25px, 3vw + 5px, 100%);">
                         <h5 class="font-semibold" style="font-size: clamp(1.25rem, 3vw + 0.25rem, 2rem);">Work Experience</h5>
                     </div>
                     <hr>
@@ -87,7 +87,7 @@
 
                 <div class="flex flex-col gap-3">
                     <div class="flex items-center gap-3 md:gap-4">
-                        <img src="/assets/Education.svg" alt="Shape icon" style="max-width: clamp(25px, 3vw + 5px, 100%);">
+                        <img src="/assets/Education.svg" alt="Shape icon" class="hover:rotate-90 duration-300" style="max-width: clamp(25px, 3vw + 5px, 100%);">
                         <h5 class="font-semibold" style="font-size: clamp(1.25rem, 3vw + 0.25rem, 2rem);">Education</h5>
                     </div>
                     <hr>
@@ -96,7 +96,7 @@
                 
                 <div class="flex flex-col gap-3">
                     <div class="flex items-center gap-3 md:gap-4">
-                        <img src="/assets/DesignPassion.svg" alt="Shape icon" style="max-width: clamp(25px, 3vw + 5px, 100%);">
+                        <img src="/assets/DesignPassion.svg" alt="Shape icon" class="hover:rotate-90 duration-300" style="max-width: clamp(25px, 3vw + 5px, 100%);">
                         <h5 class="font-semibold" style="font-size: clamp(1.25rem, 3vw + 0.25rem, 2rem);">Design Passion</h5>
                     </div>
                     <hr>

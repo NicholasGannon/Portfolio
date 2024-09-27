@@ -3,7 +3,7 @@ const initApp = () => {
     const mobileMenu = document.getElementById('mobile-menu');
     const closeBtn = document.getElementById('close-btn');
     const navigationLinks = document.getElementsByClassName('navigation-links');
-    console.log(navigationLinks);
+    const body = document.getElementById('body');
 
     let isMenuOpen = false;
 
@@ -25,6 +25,9 @@ const initApp = () => {
 
         // Toggle menu state
         isMenuOpen = !isMenuOpen;
+
+        // Toggle overflow-hidden
+        body.classList.toggle('overflow-hidden');
     }
 
     menuBtn.addEventListener('click', toggleMenu);
