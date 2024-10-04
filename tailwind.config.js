@@ -9,7 +9,7 @@ module.exports = {
       colors: {
         "primary": "#FFF8EE",
         "accent": "#DACDBB",
-        "secondary": "#2590F3",
+        "secondary": "#404040",
         "tertiary": "#675944",
       },
       animation: {

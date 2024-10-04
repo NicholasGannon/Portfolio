@@ -5,6 +5,6 @@
   },
   "scripts": {
     "dev": "live-server",
-    "tailwind-watch": "npx tailwindcss -i ./input.css -o ./output.css --watch"
+    "watch-tailwind": "npx tailwindcss -i ./input.css -o ./output.css --watch"
   }
 }
