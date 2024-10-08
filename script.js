@@ -1,8 +1,8 @@
 const initApp = () => {
-    const hamburgerBtn = document.getElementById('hamburger-button');
+    const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
-    const topBar = document.getElementById('top-bar');
-    const bottomBar = document.getElementById('bottom-bar');
+    const closeBtn = document.getElementById('close-btn');
+    const navigationLinks = document.getElementsByClassName('navigation-links');
 
     let isMenuOpen = false;
 
@@ -14,26 +14,36 @@ const initApp = () => {
             // Wait for close animation to finish before hiding
             mobileMenu.addEventListener('animationend', () => {
                 mobileMenu.classList.add('hidden');
-                mobileMenu.classList.remove('flex');
+                mobileMenu.classList.remove('block');
             }, { once: true });
         } else {
             // Show the menu with open animation
             mobileMenu.classList.remove('hidden', 'animate-close-menu');
-            mobileMenu.classList.add('flex', 'animate-open-menu');
+            mobileMenu.classList.add('block', 'animate-open-menu');
         }
-
-        // Toggle the hamburger button animation
-        topBar.classList.toggle('rotate-45');
-        topBar.classList.toggle('mb-[6px]');
-        bottomBar.classList.toggle('-rotate-45');
-        bottomBar.classList.toggle('mt-[6px]');
 
         // Toggle menu state
         isMenuOpen = !isMenuOpen;
     }
 
-    hamburgerBtn.addEventListener('click', toggleMenu);
-    mobileMenu.addEventListener('click', toggleMenu);
+    menuBtn.addEventListener('click', toggleMenu);
+    closeBtn.addEventListener('click', toggleMenu);
+    navigationLinks[0].addEventListener('click', toggleMenu);
+    navigationLinks[1].addEventListener('click', toggleMenu);
+    navigationLinks[2].addEventListener('click', toggleMenu);
 }
 
 document.addEventListener('DOMContentLoaded', initApp);
+
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)

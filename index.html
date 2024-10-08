@@ -1,199 +1,208 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="UX designer and frontend developer who focuses on crafting exceptional digital experiences that uplift and resonate with users.">
-    <meta name="google-site-verification" content="BR78BaW56HlNDLjg74LdjkWuRT7H9ZWjxiUfaRRm9Bc" />
-    <link rel="icon" type="image/x-icon" href="/Assets/Favicon.ico">
+    <title>Nicholas Gannon | Designer + Developer</title>
     <link rel="stylesheet" href="/output.css">
+    <link rel="icon" type="image/x-icon" href="/assets/Favicon.svg">
+    <!-- Lenis Import -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <!-- Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
     <!-- JS File Script -->
     <script src="/script.js" defer></script>
-    <title>Nicholas Gannon | Home</title>
 </head>
-<body class="bg-black font-clashGrotesk">
-    <!-- Hamburger Mobile Menu -->
-    <div class="bg-primary fixed w-full h-full hidden animate-open-menu" id="mobile-menu">
-        <div class="flex flex-col gap-4 p-6 absolute bottom-4">
-            <a href="#home" class="relative group text-black text-4xl font-semibold uppercase">
-                <span class="uppercase">home</span>
-                <span class="absolute -bottom-1 left-0 w-0 h-1 rounded-full bg-black transition-all duration-300 group-hover:w-12"></span>
-            </a>
-            <a href="#projects" class="relative group text-black text-4xl font-semibold uppercase">
-                <span class="uppercase">projects</span>
-                <span class="absolute -bottom-1 left-0 w-0 h-1 rounded-full bg-black transition-all duration-300 group-hover:w-12"></span>
-            </a>
-            <a href="#contact" class="relative group text-black text-4xl font-semibold uppercase">
-                <span class="uppercase">contact</span>
-                <span class="absolute -bottom-1 left-0 w-0 h-1 rounded-full bg-black transition-all duration-300 group-hover:w-12"></span>
-            </a>
-
-            <!-- Social Icons -->
-            <div class="flex gap-1 mt-2">
-                <a href="https://www.linkedin.com/in/nicholas-gannon" target="_blank" class="bg-black text-primary flex justify-center items-center w-9 h-9 border border-primary rounded-full duration-300 hover:scale-110">
+<body class="font-Bricolage bg-primary">
+    <!-- Mobile Menu -->
+    <section class="hidden fixed w-full h-full bg-secondary animate-open-menu z-10" id="mobile-menu">
+        <button class="absolute top-[2%] right-[1%] text-white text-xl px-4 py-2 outline outline-1 outline-white hover:bg-white hover:text-secondary duration:300 transition-all" id="close-btn">Close</button>
+        <div class="flex flex-col absolute bottom-4 p-6 gap-6 text-white font-black uppercase">
+            <a href="#about" class="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-1/3 after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-left text-4xl navigation-links">about me</a>
+            <a href="#work" class="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-1/3 after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-left text-4xl navigation-links">selected works</a>
+            <a href="#contact" class="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-1/3 after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-left text-4xl navigation-links">get in contact</a>
+            <div class="flex gap-2">
+                <a href="https://www.linkedin.com/in/nicholas-gannon" target="_blank" class="flex justify-center items-center w-9 h-9 border border-primary rounded-full duration-300 hover:text-black hover:bg-primary">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
-                <a href="https://github.com/NicholasGannon" target="_blank" class="bg-black text-primary flex justify-center items-center w-9 h-9 border border-primary rounded-full duration-300 hover:scale-110">
+                <a href="https://github.com/NicholasGannon" target="_blank" class="flex justify-center items-center w-9 h-9 border border-primary rounded-full duration-300 hover:text-black hover:bg-primary">
                     <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="https://dribbble.com/NicholasGannon" target="_blank" class="bg-black text-primary flex justify-center items-center w-9 h-9 border border-primary rounded-full duration-300 hover:scale-110">
+                <a href="https://dribbble.com/NicholasGannon" target="_blank" class="flex justify-center items-center w-9 h-9 border border-primary rounded-full duration-300 hover:text-black hover:bg-primary">
                     <i class="fa-brands fa-square-dribbble"></i>
                 </a>
-                <a href="https://www.behance.net/nicholasgannon" target="_blank" class="bg-black text-primary flex justify-center items-center w-9 h-9 border border-primary rounded-full duration-300 hover:scale-110">
+                <a href="https://www.behance.net/nicholasgannon" target="_blank" class="flex justify-center items-center w-9 h-9 border border-primary rounded-full duration-300 hover:text-black hover:bg-primary">
                     <i class="fa-brands fa-behance"></i>
                 </a>
-                <a href="mailto:gannonicholas@gmail.com" class="bg-black text-primary flex justify-center items-center w-9 h-9 border border-primary rounded-full duration-300 hover:scale-110">
+                <a href="mailto:gannonicholas@gmail.com" target="_blank" class="flex justify-center items-center w-9 h-9 border border-primary rounded-full duration-300 hover:text-black hover:bg-primary">
                     <i class="fa-solid fa-envelope"></i>
                 </a>
             </div>
         </div>
-    </div>
+    </section>
+    
+    <main class="bg-primary">
+        <!-- Hero + Header -->
+        <section class="bg-primary" style="padding-inline: clamp(1rem, 5vw + 0.5rem, 3rem);">
+            <header class="max-w-[1440px] mx-auto flex justify-between items-center gap-4 py-6">
+                <img src="/assets/Logo.svg" alt="Logo">
+                <span class="hidden md:block border border-t-1 border-accent w-full"></span>
+                <div class="hidden md:flex gap-2">
+                    <a href="https://www.linkedin.com/in/nicholas-gannon" target="_blank" class="flex justify-center items-center w-8 h-8 text-tertiary border border-tertiary rounded-full duration-300 hover:text-primary hover:bg-tertiary">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/NicholasGannon" target="_blank" class="flex justify-center items-center w-8 h-8 text-tertiary border border-tertiary rounded-full duration-300 hover:text-primary hover:bg-tertiary">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://dribbble.com/NicholasGannon" target="_blank" class="flex justify-center items-center w-8 h-8 text-tertiary border border-tertiary rounded-full duration-300 hover:text-primary hover:bg-tertiary">
+                        <i class="fa-brands fa-square-dribbble"></i>
+                    </a>
+                    <a href="https://www.behance.net/nicholasgannon" target="_blank" class="flex justify-center items-center w-8 h-8 text-tertiary border border-tertiary rounded-full duration-300 hover:text-primary hover:bg-tertiary">
+                        <i class="fa-brands fa-behance"></i>
+                    </a>
+                    <a href="mailto:gannonicholas@gmail.com" target="_blank" class="flex justify-center items-center w-8 h-8 text-tertiary border border-tertiary rounded-full duration-300 hover:text-primary hover:bg-tertiary">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+                <span class="block border border-t-1 border-accent w-full"></span>
+                <a href="#" class="font-light text-[#3E372E] z-0" id="menu-btn">Menu</a>
+            </header>
 
-    <!-- Hamburger Icon -->
-    <button class="fixed top-8 right-8 sm:top-12 sm:right-12 flex flex-col gap-4 items-center justify-center h-12 w-12 bg-primary rounded-full scale-110 hover:scale-100 duration-300" id="hamburger-button">
-        <span class="absolute h-[2px] w-6 rounded-full bg-black mb-[6px] duration-300" id="top-bar"></span>
-        <span class="absolute h-[2px] w-6 rounded-full bg-black mt-[6px] duration-300" id="bottom-bar"></span>
-    </button>
+            <div class="max-w-[1440px] mx-auto" style="padding-top: min(20vh, 7rem); padding-bottom: min(30vh, 12rem);">
+                <div class="flex flex-col gap-4">
+                    <h2 class="font-black leading-none uppercase" style="font-size: clamp(3rem, 9vw + 1rem, 10rem);">nicholas gannon</h2>
+                    <p class="font-light max-w-[700px]">I'm a passionate <span class="font-bold">UX Designer</span> and <span class="font-bold">Frontend Developer</span> who focuses on crafting exceptional digital experiences that uplift and resonate with users. I strive to create designs that are not only visually appealing, but also highly functional and <span class="font-bold">user-friendly.</span> Learn more about me and view some of my selected works below.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <!-- Floating Blob -->
-    <div class="relative isolate -z-10">
-        <div class="absolute inset-x-0 -top-1 transform-gpu overflow-hidden blur-3xl" aria-hidden="true">
-            <div class="relative aspect-[1155/678] w-shape h-shape rounded-full -translate-x-1/2 rotate-[30deg] bg-primary opacity-10 animate-blob"></div>
+    <!-- About -->
+    <section class="relative bg-black text-primary rounded-tl-3xl rounded-tr-3xl" style="padding-inline: clamp(1rem, 5vw + 0.5rem, 3rem);" id="about">
+        <div class="absolute bottom-0 left-0 block z-[1]">
+            <img src="/assets/About-Shapes.svg" alt="Diagonal shapes" class="md:max-w-sm">
         </div>
-    </div>
+        <div class="max-w-[1440px] mx-auto flex flex-col gap-12 sm:grid sm:grid-cols-2 py-24">
+            <h3 class="font-black leading-none" style="font-size: clamp(2rem, 7vw + 1rem, 9rem);">ABOUT ME</h3>
+            <div class="flex flex-col gap-12 z-[2]">
+                <div class="flex flex-col gap-3">
+                    <div class="flex items-center gap-3 md:gap-4">
+                        <img src="/assets/WorkExperience.svg" alt="Shape icon" class="hover:rotate-90 duration-300" style="max-width: clamp(25px, 3vw + 5px, 100%);">
+                        <h5 class="font-semibold" style="font-size: clamp(1.25rem, 3vw + 0.25rem, 2rem);">Work Experience</h5>
+                    </div>
+                    <hr>
+                    <p class="font-extralight">I'm currently working as an Information Technology (IT) Specialist at Kamson Corp. Prior, I was a Software Development intern at Memorial Sloan Kettering Cancer Center. I also interned at CHOYCES, where I focused on Web Design tasks.</p>
+                </div>
 
-    <!-- Main Container -->
-    <div class="mx-auto max-w-desktop px-6 sm:px-16">
-        <!-- Hero + Nav Section -->
-        <section class="pb-28 pt-16 sm:pt-16" id="home">
-            <div class="flex flex-col gap-8 mt-24">
-                <h1 class="text-primary" style="font-size: clamp(2.5rem, 4vw, 6.25rem); line-height: 1;">Hello, I'm Nicholas Gannon</h1>
-                <p class="max-w-7xl text-gray-300 font-light" style="font-size: clamp(1.1rem, 2vw, 2.1rem);">I'm a passionate UX Designer and Frontend Developer who focuses on crafting <span class="border-b">exceptional</span> digital experiences that uplift and resonate with users. I strive to create designs that are not only visually appealing, but also highly functional and user-friendly. Browse some of my recent work below.</p>
+                <div class="flex flex-col gap-3">
+                    <div class="flex items-center gap-3 md:gap-4">
+                        <img src="/assets/Education.svg" alt="Shape icon" class="hover:rotate-90 duration-300" style="max-width: clamp(25px, 3vw + 5px, 100%);">
+                        <h5 class="font-semibold" style="font-size: clamp(1.25rem, 3vw + 0.25rem, 2rem);">Education</h5>
+                    </div>
+                    <hr>
+                    <p class="font-extralight">I graduated from Seton Hall University in 2023, where I obtained my Bachelor's Degree in Computer Science. There, I learned about the fundamentals of programming, while also being fortunate enough to take some design courses as well.</p>
+                </div>
+                
+                <div class="flex flex-col gap-3">
+                    <div class="flex items-center gap-3 md:gap-4">
+                        <img src="/assets/DesignPassion.svg" alt="Shape icon" class="hover:rotate-90 duration-300" style="max-width: clamp(25px, 3vw + 5px, 100%);">
+                        <h5 class="font-semibold" style="font-size: clamp(1.25rem, 3vw + 0.25rem, 2rem);">Design Passion</h5>
+                    </div>
+                    <hr>
+                    <p class="font-extralight">I'm extremely passionate about design, and I'm consistently trying to improve upon my craft! I continue to prioritize staying up-to-date with the latest design + development tools, trends, and technologies.</p>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Projects Section -->
-        <section class="pb-36" id="projects">
-            <div class="flex flex-col md:grid grid-cols-2 grid-rows-3 gap-12">
-                <div class="flex flex-col gap-4">
-                    <a class="group" href="/quicshop/">
-                        <div class="overflow-hidden transition-all duration-300 rounded-xl">
-                            <img class="w-full group-hover:scale-110 ease-in-out transition-all duration-500" src="/Assets/QuicShop-Mobile.webp" alt="QuicShop thumbnail">
+    <!-- Work -->
+    <section class="bg-primary" style="padding-inline: clamp(1rem, 5vw + 0.5rem, 3rem);" id="work">
+        <div class="max-w-[1440px] mx-auto text-center py-24">
+            <h3 class="font-black leading-none" style="font-size: clamp(2rem, 7vw + 1rem, 9rem);">SELECTED WORKS</h3>
+            <div class="flex flex-col sm:grid grid-cols-2 grid-rows-2 gap-6 mt-20">
+                <a href="https://quicshop.io/" class="group" target="_blank">
+                    <div class="overflow-hidden relative transition-all duration-300 rounded-xl">
+                        <img class="w-full group-hover:scale-110 group-hover:brightness-50 ease-in-out transition-all duration-500" src="/assets/QuicShop-Mockup.png" alt="QuicShop mockup">
+                        <div class="hidden group-hover:flex flex-col items-start gap-3 text-white absolute bottom-[8%] left-[3%] px-2">
+                            <h4 class="font-bold text-lg">QuicShop</h4>
+                            <div class="flex gap-2 text-sm">
+                                <button class="border-[1.5px] px-2 py-1 rounded-md">Design</button>
+                                <button class="border-[1.5px] px-2 py-1 rounded-md">Development</button>
+                            </div>
                         </div>
-                    </a>
-                    <div class="flex flex-col">
-                        <div class="flex justify-between items-center">
-                            <p class="text-gray-400">Design • Development</p>
-                            <a href="https://quicshop.io/" target="_blank" class="text-primary">Live &nbsp;<i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
-                        </div>
-                        <p class="text-white text-2xl md:text-3xl font-medium">QuicShop</p>
                     </div>
-                </div>
-                <div class="flex flex-col gap-4">
-                    <a class="group" href="/valley/">
-                        <div class="overflow-hidden transition-all duration-300 rounded-xl">
-                            <img class="w-full group-hover:scale-110 ease-in-out transition-all duration-500" src="/Assets/Valley-Mobile-Banking.webp" alt="Valley Mobile Banking thumbnail">
+                </a>
+                <a href="https://font-resources.vercel.app/" class="group" target="_blank">
+                    <div class="overflow-hidden relative transition-all duration-300 rounded-xl">
+                        <img class="w-full group-hover:scale-110 group-hover:brightness-50 ease-in-out transition-all duration-500" src="/assets/Font-Resources-Mockup.png" alt="Budgetize mockup">
+                        <div class="hidden group-hover:flex flex-col items-start gap-3 text-white absolute bottom-[8%] left-[3%] px-2">
+                            <h4 class="font-bold text-lg">Font Resources</h4>
+                            <div class="flex gap-2 text-sm">
+                                <button class="border-[1.5px] px-2 py-1 rounded-md">Design</button>
+                                <button class="border-[1.5px] px-2 py-1 rounded-md">Development</button>
+                            </div>
                         </div>
-                    </a>
-                    <div class="flex flex-col">
-                        <p class="text-gray-400">Design</p>
-                    <p class="text-white text-2xl md:text-3xl font-medium">Valley Mobile Banking</p>
                     </div>
-                </div>
-                <div class="flex flex-col gap-4">
-                    <a class="group" href="/use-budgetize/">
-                        <div class="overflow-hidden transition-all duration-300 rounded-xl">
-                            <img class="w-full group-hover:scale-110 ease-in-out transition-all duration-500" src="/Assets/Budgetize-Mockup-1.webp" alt="Budgetize thumbnail">
+                </a>
+                <a href="/assets/Valley-PDF.pdf" class="group" target="_blank">
+                    <div class="overflow-hidden relative transition-all duration-300 rounded-xl">
+                        <img class="w-full group-hover:scale-110 group-hover:brightness-50 ease-in-out transition-all duration-500" src="/assets/ValleyMobile-Mockup.png" alt="Valley Mobile mockup">
+                        <div class="hidden group-hover:flex flex-col items-start gap-3 text-white absolute bottom-[8%] left-[3%] px-2">
+                            <h4 class="font-bold text-lg">Valley Mobile Banking</h4>
+                            <button class="border-[1.5px] px-2 py-1 rounded-md">Design</button>
                         </div>
-                    </a>
-                    <div class="flex flex-col">
-                        <div class="flex justify-between items-center">
-                            <p class="text-gray-400">Design • Development</p>
-                            <a href="https://use-budgetize.vercel.app/" target="_blank" class="text-primary">Live &nbsp;<i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
-                        </div>
-                    <p class="text-white text-2xl md:text-3xl font-medium">Budgetize</p>
                     </div>
-                </div>
-                <div class="flex flex-col gap-4">
-                    <a class="group" href="/mma-corner/">
-                        <div class="overflow-hidden transition-all duration-300 rounded-xl">
-                            <img class="w-full group-hover:scale-110 ease-in-out transition-all duration-500" src="/Assets/MMACorner-Mockup-1.webp" alt="The MMA Corner thumbnail">
+                </a>
+                <a href="/" class="group">
+                    <div class="overflow-hidden relative transition-all duration-300 rounded-xl">
+                        <img class="w-full group-hover:scale-110 group-hover:brightness-50 ease-in-out transition-all duration-500" src="/assets/Portfolio-Mockup.png" alt="Portfolio mockup">
+                        <div class="hidden group-hover:flex flex-col items-start gap-3 text-white absolute bottom-[8%] left-[3%] px-2">
+                            <h4 class="font-bold text-lg">Portfolio</h4>
+                            <div class="flex gap-2 text-sm">
+                                <button class="border-[1.5px] px-2 py-1 rounded-md">Design</button>
+                                <button class="border-[1.5px] px-2 py-1 rounded-md">Development</button>
+                            </div>
                         </div>
-                    </a>
-                    <div class="flex flex-col">
-                        <div class="flex justify-between items-center">
-                            <p class="text-gray-400">Design • Development</p>
-                            <a href="https://themmacorner.onrender.com/" target="_blank" class="text-primary">Live &nbsp;<i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
-                        </div>
-                    <p class="text-white text-2xl md:text-3xl font-medium">The MMA Corner</p>
                     </div>
-                </div>
-                <div class="flex flex-col gap-4">
-                    <a class="group" href="/african-student-association/">
-                        <div class="overflow-hidden transition-all duration-300 rounded-xl">
-                            <img class="w-full group-hover:scale-110 ease-in-out transition-all duration-500" src="/Assets/African-Student-Association.webp" alt="African Student Association Thumbnail">
-                        </div>
-                    </a>
-                    <div class="flex flex-col">
-                        <p class="text-gray-400">Design</p>
-                    <p class="text-white text-2xl md:text-3xl font-medium">African Student Association</p>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-4">
-                    <a class="group" href="/portfolio/">
-                        <div class="overflow-hidden transition-all duration-300 rounded-xl">
-                            <img class="w-full group-hover:scale-110 ease-in-out transition-all duration-500" src="/Assets/Portfolio-Mockup-2.webp" alt="Portfolio thumbnail">
-                        </div>
-                    </a>
-                    <div class="flex flex-col">
-                        <div class="flex justify-between items-center">
-                            <p class="text-gray-400">Design • Development</p>
-                            <a href="https://nicholasgannon.io/" target="_blank" class="text-primary">Live &nbsp;<i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
-                        </div>
-                    <p class="text-white text-2xl md:text-3xl font-medium">Portfolio</p>
-                    </div>
-                </div>
+                </a>
             </div>
-        </section>
-        
-        <!-- Contact Section -->
-        <section class="py-18 pb-36" id="contact">
-            <!-- Floating Blob -->
-            <div class="relative isolate -z-10">
-                <div class="absolute inset-x-0 -top-48 transform-gpu overflow-hidden blur-3xl" aria-hidden="true">
-                    <div class="relative aspect-[1155/678] w-96 h-96 rounded-full -translate-x-1/2 rotate-[30deg] bg-primary opacity-10 animate-blob"></div>
-                </div>
-            </div>
-            <div class="flex flex-col lg:flex-row lg:justify-between gap-12">
-                <div class="flex flex-col">
-                    <h2 class="text-primary font-normal" style="font-size: clamp(2.5rem, 4vw, 5rem);">Let's get in contact</h2>
-                    <p class="text-gray-300 font-light max-w-6xl" style="font-size: clamp(1.2rem, 2vw, 2.25rem);">Feel free to send me an email or connect with me on LinkedIn. I also encourage you to check out my other digital spaces. I will respond as soon as possible!</p>
-                    <!-- Social Icons -->
-                    <div class="flex gap-2 mt-8">
-                        <a href="https://www.linkedin.com/in/nicholas-gannon" target="_blank" class="text-primary flex justify-center items-center w-7 h-7 border border-primary rounded-full duration-300 hover:text-black hover:bg-primary">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/NicholasGannon" target="_blank" class="text-primary flex justify-center items-center w-7 h-7 border border-primary rounded-full duration-300 hover:text-black hover:bg-primary">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="https://dribbble.com/NicholasGannon" target="_blank" class="text-primary flex justify-center items-center w-7 h-7 border border-primary rounded-full duration-300 hover:text-black hover:bg-primary">
-                            <i class="fa-brands fa-square-dribbble"></i>
-                        </a>
-                        <a href="https://www.behance.net/nicholasgannon" target="_blank" class="text-primary flex justify-center items-center w-7 h-7 border border-primary rounded-full duration-300 hover:text-black hover:bg-primary">
-                            <i class="fa-brands fa-behance"></i>
-                        </a>
-                        <a href="mailto:gannonicholas@gmail.com" class="text-primary flex justify-center items-center w-7 h-7 border border-primary rounded-full duration-300 hover:text-black hover:bg-primary">
-                            <i class="fa-solid fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
-    <!-- Clash Grotesk Embed -->
-    <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@200,700,400,600,300,1,500&display=swap" rel="stylesheet">
+    <!-- Footer -->
+    <footer class="relative bg-black text-primary rounded-tl-3xl rounded-tr-3xl" style="padding-inline: clamp(1rem, 5vw + 0.5rem, 3rem);" id="contact">
+        <div class="absolute block bottom-0 right-0 z-[1]">
+            <img src="/assets/About-Shapes.svg" alt="Diagonal shapes" class="max-w-sm rotate-[270deg]">
+        </div>
+        <div class="max-w-[1440px] mx-auto flex flex-col gap-6 pt-24 pb-36">
+            <h4 class="font-black leading-none" style="font-size: clamp(2rem, 5vw + 1rem, 6rem);">GET IN CONTACT</h4>
+            <p class="max-w-4xl font-extralight text-xl z-[2]">Feel free to send me an email or connect with me on LinkedIn. I also encourage you to check out my other digital spaces. I will respond as soon as possible!</p>
+            <div class="flex gap-2 z-[2]">
+                <a href="https://www.linkedin.com/in/nicholas-gannon" target="_blank" class="flex justify-center items-center w-8 h-8 border border-primary rounded-full duration-300 hover:text-black hover:bg-primary">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/NicholasGannon" target="_blank" class="flex justify-center items-center w-8 h-8 border border-primary rounded-full duration-300 hover:text-black hover:bg-primary">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://dribbble.com/NicholasGannon" target="_blank" class="flex justify-center items-center w-8 h-8 border border-primary rounded-full duration-300 hover:text-black hover:bg-primary">
+                    <i class="fa-brands fa-square-dribbble"></i>
+                </a>
+                <a href="https://www.behance.net/nicholasgannon" target="_blank" class="flex justify-center items-center w-8 h-8 border border-primary rounded-full duration-300 hover:text-black hover:bg-primary">
+                    <i class="fa-brands fa-behance"></i>
+                </a>
+                <a href="mailto:gannonicholas@gmail.com" target="_blank" class="flex justify-center items-center w-8 h-8 border border-primary rounded-full duration-300 hover:text-black hover:bg-primary">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
     <!-- FontAwesome Embed -->
     <script src="https://kit.fontawesome.com/d4fd18ea18.js" crossorigin="anonymous"></script>
+
+    <!-- Lenis Embed -->
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
 </body>
 </html>

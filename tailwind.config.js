@@ -4,41 +4,33 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        clashGrotesk: ["Clash Grotesk", "sans-serif"],
+        Bricolage: ["Bricolage Grotesque", "sans-serif"],
       },
       colors: {
-        "primary": "#D7FF82",
-      },
-      spacing: {
-        "desktop": "1360px",
-        "shape": "40rem",
+        "primary": "#FFF8EE",
+        "accent": "#DACDBB",
+        "secondary": "#404040",
+        "tertiary": "#675944",
       },
       animation: {
-        blob: "blob 7s infinite",
-        'open-menu': 'open-menu 0.5s ease-in-out forwards',
-        'close-menu': 'close-menu 0.5s ease-in-out forwards',
+        'open-menu': 'open-menu 0.8s ease-in-out forwards',
+        'close-menu': 'close-menu 0.8s ease-in-out forwards',
       },
       keyframes: {
-        blob: {
-          "0%": {
-            transform: "translate(520px, 0px) scale(1)",
-          },
-          "50%": {
-            transform: "translate(-120px, 0px) scale(1)",
-          },
-          "100%": {
-            transform: "translate(520px, 0px) scale(1)",
-          },
-        },
         'open-menu': {
           '0%': {
-            transform: 'scaleY(0)',
-          },
-          '80%': {
-            transform: 'scaleY(1)',
+            transform: 'translateX(-100%)',
           },
           '100%': {
-            transform: 'scaleY(1)',
+            transform: 'translateX(0%)',
+          }
+        },
+        'close-menu': {
+          '0%': {
+            transform: 'translateX(0%)',
+          },
+          '100%': {
+            transform: 'translateX(100%)',
           }
         },
         'close-menu': {
@@ -54,4 +46,3 @@ module.exports = {
   },
   plugins: [],
 }
-
