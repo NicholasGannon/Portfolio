@@ -1039,20 +1039,6 @@ video {
   animation: close-menu 0.8s ease-in-out forwards;
 }
 
-@keyframes close-menu {
-  0% {
-    transform: scaleY(1);
-  }
-
-  100% {
-    transform: scaleY(0);
-  }
-}
-
-.animate-close-menu {
-  animation: close-menu 0.5s ease-in-out forwards;
-}
-
 @keyframes open-menu {
   0% {
     transform: translateX(-100%);
