@@ -33,14 +33,6 @@ module.exports = {
             transform: 'translateX(100%)',
           }
         },
-        'close-menu': {
-          '0%': {
-            transform: 'scaleY(1)',
-          },
-          '100%': {
-            transform: 'scaleY(0)',
-          }
-        },
       },
     },
   },
