@@ -1897,6 +1897,11 @@ video {
   border-top-right-radius: 0.25rem;
 }
 
+.rounded-t-3xl {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
 .rounded-bl {
   border-bottom-left-radius: 0.25rem;
 }
@@ -1925,16 +1930,8 @@ video {
   border-top-left-radius: 0.25rem;
 }
 
-.rounded-tl-3xl {
-  border-top-left-radius: 1.5rem;
-}
-
 .rounded-tr {
   border-top-right-radius: 0.25rem;
-}
-
-.rounded-tr-3xl {
-  border-top-right-radius: 1.5rem;
 }
 
 .border {
@@ -2403,6 +2400,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-red-800 {
+  --tw-text-opacity: 1;
+  color: rgb(153 27 27 / var(--tw-text-opacity));
 }
 
 .underline {
