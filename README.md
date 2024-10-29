@@ -8,7 +8,7 @@
 
 ## Overview
 - [This site](https://nicholasgannon.io/) serves as my **Design/Frontend portfolio,** primarily focused on showcasing my recent work.</br>
-- In addition, it provides various ways for users and viewers to **get in contact.**
+- In addition, it provides various ways for users and viewers to **get in contact** and learn more about me.
 - I'm consistently trying to **add more projects,** and improve the design of this site.
 
 ## Installation
