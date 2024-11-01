@@ -566,32 +566,12 @@ video {
   position: relative;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .bottom-\[8\%\] {
   bottom: 8%;
 }
 
 .left-\[3\%\] {
   left: 3%;
-}
-
-.bottom-0 {
-  bottom: 0px;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.z-\[2\] {
-  z-index: 2;
-}
-
-.z-\[1\] {
-  z-index: 1;
 }
 
 .mx-auto {
@@ -601,18 +581,6 @@ video {
 
 .mb-4 {
   margin-bottom: 1rem;
-}
-
-.mb-24 {
-  margin-bottom: 6rem;
-}
-
-.mb-12 {
-  margin-bottom: 3rem;
-}
-
-.mb-36 {
-  margin-bottom: 9rem;
 }
 
 .flex {
@@ -679,10 +647,6 @@ video {
   overflow: hidden;
 }
 
-.whitespace-nowrap {
-  white-space: nowrap;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -727,6 +691,18 @@ video {
   background-image: url('/images/Background-Grid.png');
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-repeat {
+  background-repeat: repeat;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -751,25 +727,6 @@ video {
   padding-bottom: 6rem;
 }
 
-.py-\[20vh\] {
-  padding-top: 20vh;
-  padding-bottom: 20vh;
-}
-
-.py-\[80vh\] {
-  padding-top: 80vh;
-  padding-bottom: 80vh;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.pb-24 {
-  padding-bottom: 6rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -782,8 +739,12 @@ video {
   font-family: Playfair Display, sans-serif;
 }
 
-.text-\[8vw\] {
-  font-size: 8vw;
+.text-\[10vw\] {
+  font-size: 10vw;
+}
+
+.text-\[5vw\] {
+  font-size: 5vw;
 }
 
 .text-lg {
@@ -796,16 +757,8 @@ video {
   line-height: 1.25rem;
 }
 
-.text-\[2rem\] {
-  font-size: 2rem;
-}
-
-.text-\[5vw\] {
-  font-size: 5vw;
-}
-
-.text-\[10vw\] {
-  font-size: 10vw;
+.font-black {
+  font-weight: 900;
 }
 
 .font-bold {
@@ -816,20 +769,17 @@ video {
   font-weight: 800;
 }
 
-.font-light {
-  font-weight: 300;
-}
-
-.font-black {
-  font-weight: 900;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
 
 .italic {
   font-style: italic;
+}
+
+.text-\[\#806c4e\] {
+  --tw-text-opacity: 1;
+  color: rgb(128 108 78 / var(--tw-text-opacity));
 }
 
 .text-black {
@@ -845,21 +795,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
-}
-
-.text-\[\#BFB29D\] {
-  --tw-text-opacity: 1;
-  color: rgb(191 178 157 / var(--tw-text-opacity));
-}
-
-.text-\[\#9c8b72\] {
-  --tw-text-opacity: 1;
-  color: rgb(156 139 114 / var(--tw-text-opacity));
 }
 
 .outline {
