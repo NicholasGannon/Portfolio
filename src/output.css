@@ -579,12 +579,41 @@ video {
   margin-right: auto;
 }
 
+.my-24 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
 
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
+}
+
+.mt-48 {
+  margin-top: 12rem;
+}
+
+.mt-\[8vw\] {
+  margin-top: 8vw;
+}
+
+.mt-\[8vh\] {
+  margin-top: 8vh;
+}
+
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -601,6 +630,10 @@ video {
 
 .cursor-not-allowed {
   cursor: not-allowed;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -691,16 +724,20 @@ video {
   background-image: url('/images/Background-Grid.png');
 }
 
-.bg-cover {
-  background-size: cover;
-}
-
 .bg-contain {
   background-size: contain;
 }
 
-.bg-repeat {
-  background-repeat: repeat;
+.bg-center {
+  background-position: center;
+}
+
+.bg-top {
+  background-position: top;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-2 {
@@ -725,6 +762,26 @@ video {
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
+}
+
+.pt-64 {
+  padding-top: 16rem;
+}
+
+.pt-96 {
+  padding-top: 24rem;
+}
+
+.pt-72 {
+  padding-top: 18rem;
 }
 
 .text-center {
@@ -777,11 +834,6 @@ video {
   font-style: italic;
 }
 
-.text-\[\#806c4e\] {
-  --tw-text-opacity: 1;
-  color: rgb(128 108 78 / var(--tw-text-opacity));
-}
-
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -795,6 +847,21 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .outline {
@@ -861,6 +928,10 @@ video {
 
   .sm\:text-\[2\.65vw\] {
     font-size: 2.65vw;
+  }
+
+  .sm\:text-\[2\.5vw\] {
+    font-size: 2.5vw;
   }
 }
 
