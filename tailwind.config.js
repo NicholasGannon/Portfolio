@@ -1,36 +1,29 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: [
+    './index.html',
+    './src/**/*.{html,js}',
+  ],
   theme: {
     extend: {
       fontFamily: {
         Bricolage: ["Bricolage Grotesque", "sans-serif"],
+        Playfair: ["Playfair Display", "sans-serif"],
       },
       colors: {
-        "primary": "#FFF8EE",
-        "accent": "#DACDBB",
-        "secondary": "#404040",
-        "tertiary": "#675944",
+        "primary": "#F3E8D9",
       },
       animation: {
         'open-menu': 'open-menu 0.8s ease-in-out forwards',
         'close-menu': 'close-menu 0.8s ease-in-out forwards',
       },
       keyframes: {
-        'open-menu': {
+        'scroll': {
           '0%': {
-            transform: 'translateX(-100%)',
+            transform: 'translateX(0)',
           },
           '100%': {
-            transform: 'translateX(0%)',
-          }
-        },
-        'close-menu': {
-          '0%': {
-            transform: 'translateX(0%)',
-          },
-          '100%': {
-            transform: 'translateX(100%)',
+            transform: 'translateX(-50%)',
           }
         },
       },
